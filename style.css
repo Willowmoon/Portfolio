@@ -6,8 +6,9 @@ white : #E9E8E2;
 gray : #B8BAAB; */
 
 /* FONTS
-font-family: 'Bad Script', cursive;
-font-family: 'Unna', serif; */
+font-family: 'Trirong', serif;
+font-family: 'IM Fell DW Pica SC', serif;
+font-family: 'Bellota', cursive; */
 
 
 * {
@@ -37,8 +38,8 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-  min-height:380px;
-  max-height: 100%;
+  /* min-height:380px;
+  max-height: 100%; */
 }
 /* LOGO */
 img {
@@ -87,8 +88,8 @@ img {
 /*/////////////////HOME DIV///////////////////*/
 .home {
   min-height:380px;
-  font-family: 'Bad Script', cursive;
-  background: red;
+  font-family: 'Bellota', cursive;
+  background: rgba(255, 0, 0, 0.222);
   margin: 0px;
 }
 /* TEXT */
@@ -106,39 +107,49 @@ img {
   padding-left:20%;
   color: rgb(136, 119, 9);
   font-size: 54px;
-  /* letter-spacing: 35px; */
   margin:-25px;
-  font-family: 'Unna', serif;
 }
 .home h1:nth-of-type(2) {
-  padding-left:26%;
+  padding-left:20%;
   font-size: 130px;
+  letter-spacing: -10px;
   color: goldenrod;
 }
 
 
 /*/////////////////ABOUT DIV//////////////////*/
 .about {
-  background: blue;
+  background: rgba(0, 0, 255, .222);
+  height:100%;
 }
 .about-text {
   background-color: rgba(6, 6, 6, 0.174);
   padding: 30px;
-  margin-top: 25%;
+  margin-top: 15%;
   margin-left:15%;
   width: 50%;
   max-width: 300px;
 }
 /*/////////////////PORTFOLIO DIV///////////////*/
 .portfolio {
-  background: green;
+  background: rgba(0, 255, 0, .222);
+}
+.portfolio .grid p {
+  background-color: rgba(6, 6, 6, 0.174);
+  padding: 30px;
+  margin-top: 15%;
+  margin-left:15%;
+  width: 50%;
+  max-width: 300px;
 }
 .grid {
-
+  grid-template-areas: 
+    "project1 ";
+  grid-gap: 20px;
 }
 /*/////////////////CONTACT DIV/////////////////*/
 .contact {
-  background: purple;
+  background: rgba(128, 0, 128, 0.222);
 }
 iframe {
   margin-left: 15%;
@@ -147,4 +158,53 @@ iframe {
   overflow: hidden;
 }
 /*//////////////////MEDIA QUERIES//////////////*/
-@media
+@media(min-width: 768px) {
+  .nav {
+    background: rgba(233, 232, 226, 0.222);
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-height:380px;
+    max-height: 100%;
+  }
+  /* LOGO */
+  img {
+    display: block;
+    margin: 8px auto;
+    width: 30px;
+    height: auto;
+  }
+  /* LINK ICONS */
+  .nav nav a{
+    font-size: 22px;
+    color: #B8BAAB;
+    display: block;
+    padding-left: 15px;
+    position: relative;
+    text-decoration: none;
+    margin: 20px auto;
+  }
+  .nav nav {
+    margin-top: 50px;
+  }
+  /* SOCIAL ICONS */
+  .social {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    margin: 0px;
+  }
+  .social li a i {
+    padding: 7px 0px;
+    display: block;
+    font-size: 15px;
+    line-height: 16px;
+    color: #B8BAAB;;
+  }
+}
