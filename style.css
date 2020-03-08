@@ -23,6 +23,12 @@ body {
   height:100%;
   width:100%;
 }
+.show {
+  display:content;
+}
+.hide{
+  display:none;
+}
 /*/////////////////NAV BAR//////////////*/
 .nav {
   background: rgba(233, 232, 226, 0.222);
@@ -42,7 +48,7 @@ img {
   height: auto;
 }
 /* LINK ICONS */
-.nav nav a {
+.nav nav a{
   font-size: 22px;
   color: #B8BAAB;
   display: block;
@@ -141,3 +147,4 @@ iframe {
   overflow: hidden;
 }
 /*//////////////////MEDIA QUERIES//////////////*/
+@media
