@@ -17,12 +17,15 @@ font-family: 'Bellota', cursive; */
   width 100%;
 }
 html {
-  background: rgb(79, 81, 80);
+  height:100%;
 }
 body {
   margin: 0;
   height:100%;
   width:100%;
+
+  background-size: cover;
+  background: url('https://i.imgur.com/POyBl7K.jpg') no-repeat center;
 }
 .show {
   display:content;
@@ -32,14 +35,13 @@ body {
 }
 /*/////////////////NAV BAR//////////////*/
 .nav {
-  background: rgba(233, 232, 226, 0.222);
+  background: rgba(0, 0, 0, 0.427);
   width: 50px;
   height: 100%;
   position: fixed;
   top: 0px;
   left: 0px;
-  /* min-height:380px;
-  max-height: 100%; */
+  min-height:380px;
 }
 /* LOGO */
 img {
@@ -82,15 +84,17 @@ img {
 /* HOVER EFFECTS */
 .social li a:hover i, i:hover {
   color: rgb(57, 215, 146);
-  transition: 5s;
+  transition: 2s;
 }
 
 /*/////////////////HOME DIV///////////////////*/
 .home {
   min-height:380px;
   font-family: 'Bellota', cursive;
-  background: rgba(255, 0, 0, 0.222);
   margin: 0px;
+  height:100%;
+  width:100%;
+  background-color: rgba(31, 29, 15, 0.911);
 }
 /* TEXT */
 .text-home{
@@ -107,7 +111,8 @@ img {
   padding-left:20%;
   color: rgb(136, 119, 9);
   font-size: 54px;
-  margin:-25px;
+  margin-top:-25px;
+  margin-bottom:-45px;
 }
 .home h1:nth-of-type(2) {
   padding-left:20%;
@@ -159,52 +164,5 @@ iframe {
 }
 /*//////////////////MEDIA QUERIES//////////////*/
 @media(min-width: 768px) {
-  .nav {
-    background: rgba(233, 232, 226, 0.222);
-    width: 50px;
-    height: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    min-height:380px;
-    max-height: 100%;
-  }
-  /* LOGO */
-  img {
-    display: block;
-    margin: 8px auto;
-    width: 30px;
-    height: auto;
-  }
-  /* LINK ICONS */
-  .nav nav a{
-    font-size: 22px;
-    color: #B8BAAB;
-    display: block;
-    padding-left: 15px;
-    position: relative;
-    text-decoration: none;
-    margin: 20px auto;
-  }
-  .nav nav {
-    margin-top: 50px;
-  }
-  /* SOCIAL ICONS */
-  .social {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: block;
-    padding: 0px;
-    list-style: none;
-    text-align: center;
-    margin: 0px;
-  }
-  .social li a i {
-    padding: 7px 0px;
-    display: block;
-    font-size: 15px;
-    line-height: 16px;
-    color: #B8BAAB;;
-  }
+
 }
