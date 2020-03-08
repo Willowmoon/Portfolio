@@ -1,0 +1,72 @@
+/* *{
+  
+} */
+
+/* colors 
+green : rgb(39, 255, 162);
+dark-green: #2D6C3C;
+gold : rgb(218, 194, 9);
+white : #E9E8E2;
+gray : #B8BAAB; */
+
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  width 100%;
+}
+
+/* ////////NAV BAR///////// */
+.nav {
+  background: #E9E8E2;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height:380px;
+}
+/* LOGO */
+img {
+  display: block;
+  margin: 8px auto;
+  width: 30px;
+  height: auto;
+}
+/* LINK ICONS */
+.nav nav a {
+  font-size: 22px;
+  color: #B8BAAB;
+  display: block;
+  padding-left: 15px;
+  position: relative;
+  text-decoration: none;
+  margin: 20px auto;
+}
+.nav nav {
+  margin-top: 50px;
+}
+/* SOCIAL ICONS */
+.social {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: block;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  margin: 0px;
+}
+.social li a i {
+  padding: 7px 0px;
+  display: block;
+  font-size: 15px;
+  line-height: 16px;
+  color: #B8BAAB;;
+}
+/* HOVER EFFECTS */
+.social li a:hover i, i:hover {
+  color: rgb(57, 215, 146);
+  transition: 5s;
+}
+
