@@ -1,122 +1,123 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Unit 1 Project Build A Portfolio Site
+# Project Overview
 
-#### Overview
+## Project Schedule
 
-This project will give you a chance to use the skills we've learned in class to create a site that highlights the skills and projects you'll be working on in WDI. You'll get a chance to use JavaScript to tackle interactions such as an image slider, a responsive hamburger menu, and quotes that fade in and out on a timer.
+This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
-Make sure to customize the design and content of the website to make it your own.
+You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-You will be working individually for this project, but we'll be guiding you throughout the process and helping as you go.
+|  Day | Deliverable | Status
+|---|---| ---|
+|Day 1| Project Description | Incomplete
+|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 4| MVP & Bug Fixes | Incomplete
+|Day 5| Final Touches | Incomplete
+|Day 6| Present | Incomplete
 
----
 
-#### Requirements
+## Project Description
 
-Your work must:
+Portfolio website with show/hide divs to change active content via buttons on the side.
 
-- Use semantic markup for HTML and CSS, adhering to best practices.
-- Use CSS GRID to create a multi-column layout.
-- Use Flexbox for content
-- Must be mobile mobile first, then tablet and desktop responsive.
-- Must pull in projects via API call from google sheet 
-- Be deployed and accessible online either via Github Pages or Surge. 
----
+## Google Sheet
 
-#### Necessary Deliverables
+Include link to your google sheet here.  Here is the sample (https://docs.google.com/spreadsheets/d/1q3DuE5Lw30-dJygOlehu70IDq0YU8TcipN9K7vTEZwE/edit#gid=0) 
 
-- An About, Projects, Contact form 
-- Site must be created using a "mobile first" approach. 
-- A Git repository, hosted on your personal GitHub, that includes a link to your hosted site. Site url should be in the form of githubusername.github.io. 
-- Repo must contain frequent commits (min 15+) dating back to the beginning of the project.
-- An updated project workshheet will all sections filled out accordingly. 
-- An in-class demo of the site that shows off the interactions you worked on.
-- A mobile nav that expands and collapses when a user clicks on the hamburger icon.
+## Wireframes
 
-## Portfolio Samples
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
+- [Wireframe 1](https://i.imgur.com/3QMKVOq.jpg)
+- wireframe for start/homepage and mobile contact page primary design
+- [Wireframe 2](https://i.imgur.com/9Xb3jHB.jpg)
+- wireframe for about and portfolio pages 
+- [Wireframe 3](https://i.imgur.com/lWB0VWW.jpg)
+- wireframe for contact page and mobile about/portfolio
+## Time/Priority Matrix 
 
-Check out portfoliios that look awesome and emulate the parts that speak to you. Here are some that we like but you should google around and find stuff you're into.
+Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete.   
 
- - [denisechandler.com](http://www.denisechandler.com/)
+Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
 
- - [mattfarely.ca](http://mattfarley.ca/)
+Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
 
- - [sebkay.com](http://sebkay.com/)
+Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
+- [TP matrix](https://i.imgur.com/UTmhX6V.jpg)
+### MVP/PostMVP - 5min
 
- - [imdev.in](https://imdev.in/)
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+
+#### MVP (examples)
+
+- Pull data using google json api
+- Render data on page 
+- css background
+- html structure
+- carousel
+- responsive navbar
+
+#### PostMVP 
+
+- threejs 
+- multiple backgrounds
+- animations between pages
+- custom form
+- letts overlay nav on side
+
+## Functional Components
+
+Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
+
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| word styling css | M | 1hr | 0 | incomplete |
+| logo | M | 1hr | 0 | incomplete |
+| Background images | L | 3hrs | 1hr | incomplete |
+| Nav Buttons | H | 2hrs | 2 hrs| 2hrs |
+| Adding Carousel | M | 3hr | 0 | incomplete |
+| Adding Form | L | 2hrs| 0 | incomplete |
+| Working with API | H | 3hrs| 0 | incomplete|
+| HTML frame setup | H | 2hrs | 2hrs | 2hrs |
+| Total | H | 21hrs| 5hrs | 5hrs |
+
+## Additional Libraries
+ Use this section to list all supporting libraries and thier role in the project. 
+ fontawesome for icons 
+
+## Code Snippet
+
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+
+
+```javascript
+//function for buttonpress to hide other divs and show div of button pressed
+$hButton.click(function() {
+    $home.addClass('show').removeClass('hide');
+    if ($about.hasClass('show')) {
+        $about.addClass('hide').removeClass('show');
+    }
+    if ($portfolio.hasClass('show')) {
+        $portfolio.addClass('hide').removeClass('show');
+    }
+    if ($contact.hasClass('show')) {
+        $contact.addClass('hide').removeClass('show');
+    }
+})
+```
  
- ### Previous SEI Students
+## sources/inspirations
+nav bar inspiration https://jacekjeznach.com/
 
- - [helloaileen.com](http://helloaileen.com)
- 
- - [eloise-ress-barrow.surge.sh/](http://eloise-ress-barrow.surge.sh/#writing)
-
- - [lianapenn.com](https://www.lianapenn.com/)
- 
- - [robertdiscipio.surge.sh/](http://robertdiscipio.surge.sh/)
- 
- - [andrewhollingworth.com/](http://andrewhollingworth.com/)
- 
- - [jessicalandzberg.github.io/](https://jessicalandzberg.github.io/Unit_1_Project/#myJourney0)
- 
- - [ga profiles](https://profiles.generalassemb.ly/profiles)
+function to get nav buttons to work by adding and removing classes (comments)
+https://forum.jquery.com/topic/how-to-change-a-css-class-with-using-jquery-and-a-click-function
 
 
-### Finding Good Portfolio Sites To Emulate - 10 min
 
-Search and compare at least 3 profile web sites.  Record your findings in the table below and include some aspect of the site that you would like to incorporate into your own site. 
+## Issues and Resolutions
+ Use this section to list of all major issues encountered and their resolution.
 
-Link To Site  | One Thing I'd Like To Incorporate | Initial Research On That Item
-| ------------- | ------------- | ------------- |
-| [http://www.denisechandler.com/](http://www.denisechandler.com/)| initial animation\drawing on page load
-|[jkeohan.com](jkeohan.com) | mouseover on a project triggers animations |
-| [http://mattfarley.ca/](http://mattfarley.ca/) |  layout of the projects
-
-#### Starter Code
-
-No starter code has been provided for this project, as you will be building your site from scratch. As an option, you can use the [HTML5 Boilerplate](https://html5boilerplate.com/) as a template to get started.
-
----
-#### Suggested Ways to Get Started
-
-- Don't hesitate to write throwaway code to solve short-term problems.
-- Read the documentation for whatever technologies you use. **Most of the time — but not always — there is a tutorial you can follow, and learning to read documentation is crucial to your success as a developer.**
-- **Write pseudocode before you write any JavaScript code.** Planning out and thinking through interactions for a website is an important step that will save you time and effort when you start actually coding.
-- Do not simply copy and paste code that you find online! It is OK (and highly encouraged) to use resources like Stack Overflow when thinking through interactions, but use these sites as a guide and then write the code on your own.
-
-#### Front End Frameworks
-
-Try exploring these front end frameworks:
-
-- [https://materializecss.com/](https://materializecss.com/)
-- [https://getbootstrap.com/](https://getbootstrap.com/)
-
----
-#### Hungry For More?
-
-If you're looking for an extra challenge, try tackling some of the tasks below:
-
-* Add validation to the contact form to make sure the user has filled out all required fields before submitting.
-* Add a skills section featuring skills you have/will have learned in the class.
-* Add a carousel 
-
----
-
-#### Additional Resources
-
-- Joe's [FEWD Trello Board](https://trello.com/b/yqrvugBk/lectures)
-- Joe's YouTube 3 Part Sereis on [jQuery Top Nav Animation On Scroll](https://www.youtube.com/watch?v=mRsF-a3qFZE&t=176s)
-
-
-#### Need More Review?
-
-
-- HTML/CSS
-	- [Practice CSS Selectors with CSS Diner](https://flukeout.github.io/)
-	- [Flexbox Froggy](http://flexboxfroggy.com/)
-
-
-- JavaScript
-	- [JavaScript Timers](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Timers)
-
----
-
+#### SAMPLE.....
+**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
+**RESOLUTION**: Missing comma after first object in sources {} object
