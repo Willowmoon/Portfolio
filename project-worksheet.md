@@ -66,7 +66,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| word styling css | 1hr | 0 | incomplete |
+| word styling css | M | 1hr | 0 | incomplete |
 | logo | M | 1hr | 0 | incomplete |
 | Background images | L | 3hrs | 1hr | incomplete |
 | Nav Buttons | H | 2hrs | 2 hrs| 2hrs |
