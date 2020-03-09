@@ -18,19 +18,21 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Portfolio website with show/hide divs to change active content via buttons on the side.
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
+Include link to your google sheet here.  Here is the sample (https://docs.google.com/spreadsheets/d/1q3DuE5Lw30-dJygOlehu70IDq0YU8TcipN9K7vTEZwE/edit#gid=0) 
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
-
-[https://www.figma.com/](https://www.figma.com/)
-[https://mockflow.com/app/#Wireframe](https://mockflow.com/app/#Wireframe)
-
+[Wireframe 1](https://i.imgur.com/3QMKVOq.jpg)
+wireframe for start/homepage and mobile contact page primary design
+[Wireframe 2](https://i.imgur.com/9Xb3jHB.jpg)
+wireframe for about and portfolio pages 
+[Wireframe 3](https://i.imgur.com/lWB0VWW.jpg)
+wireframe for contact page and mobile about/portfolio
 ## Time/Priority Matrix 
 
 Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
@@ -64,12 +66,19 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| word styling css | 1hr | 0 | incomplete |
+| logo | M | 1hr | 0 | incomplete |
+| Background images | L | 3hrs | 1hr | incomplete |
+| Nav Buttons | H | 2hrs | 2 hrs| 2hrs |
+| Adding Carousel | H | 3hr | 0 | incomplete |
+| Adding Form | H | 3hrs| 0 | incomplete |
+| Working with API | H | 3hrs| 0 | incomplete|
+| HTML frame setup | H | 2hrs | 2hrs | 2hrs |
+| Total | H | 21hrs| 5hrs | 5hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
+ fontawesome for icons 
 
 ## Code Snippet
 
@@ -80,6 +89,19 @@ function reverse(string) {
 	// here is the code to reverse a string of text
 }
 ```
+//function for buttonpress to hide other divs and show div of button pressed
+$hButton.click(function() {
+    $home.addClass('show').removeClass('hide');
+    if ($about.hasClass('show')) {
+        $about.addClass('hide').removeClass('show');
+    }
+    if ($portfolio.hasClass('show')) {
+        $portfolio.addClass('hide').removeClass('show');
+    }
+    if ($contact.hasClass('show')) {
+        $contact.addClass('hide').removeClass('show');
+    }
+})
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
