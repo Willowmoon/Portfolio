@@ -26,7 +26,7 @@ body {
   max-width: 100%;
   min-height: 100%;
   height:100%;
-  background-image: url('https://i.imgur.com/POyBl7K.jpg');
+  background-image: url('https://i.imgur.com/upAevI6.jpg');
 }
 .show {
   display:content;
@@ -87,7 +87,6 @@ img {
   color: rgb(255, 255, 255);
   transition: 2s;
 }
-
 /*/////////////////HOME DIV///////////////////*/
 .home {
   min-height:380px;
