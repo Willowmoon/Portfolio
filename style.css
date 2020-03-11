@@ -103,10 +103,16 @@ img {
 }
 .home h1 {
   color: rgb(218, 194, 9);
+  font-size: 20vw;
+  padding-left:10%;
+  margin-top: 5%;
+}
+/* .home h1 {
+  color: rgb(218, 194, 9);
   font-size: 88px;
   padding-left:15%;
-}
-.home h2 {
+} */
+/* .home h2 {
   font-weight: 700;
   padding-left:20%;
   color: rgb(136, 119, 9);
@@ -119,7 +125,7 @@ img {
   font-size: 130px;
   letter-spacing: -10px;
   color: goldenrod;
-}
+} */
 
 
 /*/////////////////ABOUT DIV//////////////////*/
@@ -147,7 +153,7 @@ img {
   margin-top: -16px;;
 }
 .portfolio .grid p {
-  background-color: rgba(6, 6, 6, 0.174);
+  /* background-color: rgba(6, 6, 6, 0.174); */
   padding: 30px;
   padding-top: 15%;
   margin-left:15%;
@@ -155,10 +161,26 @@ img {
   max-width: 300px;
 }
 .grid {
-  grid-template-areas: 
-    "project1 ";
-  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  padding: 10%;
 }
+img {
+  width: 100%;
+  height: auto;
+}
+.pBox .project-titles{
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  display: box;
+  font-size: 26px;
+}
+.pBox a {
+  background-color: rgba(0, 0, 0, 0.427);
+}
+
 /*/////////////////CONTACT DIV/////////////////*/
 .contact {
   background: rgba(128, 0, 128, 0.507);
