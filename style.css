@@ -109,7 +109,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   width:100vw;
-  background-color: rgba(31, 29, 15, 0.911);
+  background-color: #121f23;
 }
 h1 {
   /* color: rgb(218, 194, 9); */
@@ -117,7 +117,7 @@ h1 {
   padding-left:10%;
   margin: 0px auto 0 5px;
   color: #e0eff2;
-  font: italic bold 100px Georgia, Serif;
+  font: italic bold 16vw Georgia, Serif;
   text-shadow: -3px 3px 0 #712a2a7b, -14px 7px 0 #0a0e275a;
 }
 
