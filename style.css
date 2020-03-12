@@ -123,7 +123,29 @@ h1 {
   font: italic bold 16vw Georgia, Serif;
   text-shadow: -3px 3px 0 #712a2a7b, -14px 7px 0 #0a0e275a;
 }
-
+.animate-reveal {
+  opacity: 0;
+  animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+}
+.first {
+  animation-delay: 0ms;
+}
+.second {
+  animation-delay: 500ms;
+}
+.third {
+  animation-delay: 1s;
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*/////////////////ABOUT DIV//////////////////*/
 .about {
   background: rgba(15, 15, 101, 0.568);
