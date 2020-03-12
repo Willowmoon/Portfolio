@@ -187,12 +187,10 @@ h1 {
   padding-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  height:100vh;
-  grid-gap: 20px;
 }
 .grid a {
   width: 33.3vw;
-  height: 200px;
+  height: 300px;
 }
 .pBox .project-titles{
   text-decoration: none;
