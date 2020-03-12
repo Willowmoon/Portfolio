@@ -76,9 +76,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | logo | M | 1hr | 0 | incomplete |
 | Background images | L | 3hrs | 1hr | incomplete |
 | Nav Buttons | H | 2hrs | 2 hrs| 2hrs |
-| Adding Carousel | M | 3hr | 0 | incomplete |
-| Adding Form | L | 2hrs| 0 | incomplete |
-| Working with API | H | 3hrs| 0 | incomplete|
+| Adding Portfolio Images | M | 3hr | 1hr | hr |
+| Adding Form | L | 2hrs| 30min | 30min |
+| Working with API | H | 3hrs| 1hr | 1hr |
 | HTML frame setup | H | 2hrs | 2hrs | 2hrs |
 | Total | H | 21hrs| 5hrs | 5hrs |
 

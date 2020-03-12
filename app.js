@@ -9,6 +9,9 @@ $aButton = $(".aboutButton")
 $pButton = $(".portfolioButton")
 $cButton = $(".contactButton")
 
+$closeButton = $(".closeButton")
+$openButton = $(".openButton")
+
 //FUNCTIONS FOR HIDING DIVS
 //source (comments section)
 //https://forum.jquery.com/topic/how-to-change-a-css-class-with-using-jquery-and-a-click-function
@@ -110,3 +113,16 @@ function app(projects) {
   }
   gallery()
 }
+
+// navigation collapse/expand
+function openNav() {
+    document.getElementById("collapse").style.width = "160px";
+    document.getElementById("main").style.marginLeft = "160px";
+    $openButton.addClass('hide');
+  }
+  
+  function closeNav() {
+    document.getElementById("collapse").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    $openButton.addClass('show').removeClass('hide');
+  }
