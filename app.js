@@ -99,14 +99,10 @@ function app(projects) {
   function gallery(){
     for(let i =0; i < projects.length; i++){
         let $card = $(`
-        <div class = "pBox">
-           <p class="project-titles" href="#">${projects[i].title}</p>
-        <div class="project-image">
-        <a href=${projects[i].url}>
-             <img width="300" height="169" src=${projects[i].image} alt=${projects[i].title}></a>
-             <p>${projects[i].description}</p>
-        </div>
-        </div>`)
+        <a href=${projects[i].url} target="_blank">
+        <div class = "pBox" style="background-image: url(${projects[i].image}); background-position: center; background-repeat: no-repeat;" >
+           <p class="project-titles" href="#" data-hover="${projects[i].description}">${projects[i].title}</p>
+        </div></a>`)
 
         $('.grid').append($card)
     }
