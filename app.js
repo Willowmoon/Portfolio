@@ -3,7 +3,7 @@ $home = $('.home')
 $about = $(".about")
 $portfolio = $(".portfolio")
 $contact = $(".contact")
-
+//Buttons
 $hButton = $(".homeButton")
 $aButton = $(".aboutButton")
 $pButton = $(".portfolioButton")
@@ -67,19 +67,12 @@ $cButton.click(function() {
 let url = 'https://docs.google.com/spreadsheets/d/1q3DuE5Lw30-dJygOlehu70IDq0YU8TcipN9K7vTEZwE/edit#gid=0';
 let id = '1q3DuE5Lw30-dJygOlehu70IDq0YU8TcipN9K7vTEZwE';
 let source = 'https://spreadsheets.google.com/feeds/list/1q3DuE5Lw30-dJygOlehu70IDq0YU8TcipN9K7vTEZwE/od6/public/values?alt=json';
-// ES6 - fetch
-
 // fetch queries the url provided and requests that the data be sent to it 
-// it receives JSON => JS Object Notation
 // we use .json() to parse the data from "{}" to an full blown {}
 fetch(source)
   .then( response => response.json() ) // this parses the data from string back into an object
   .then( data =>  {
-      console.log('data', data)
-      // data.feed.entry is the array that stores our projects
-      // the projects are stored as objects
       let projects = data.feed.entry.map( project => {
-        // console.log('project', project.gsx$title.$t)
         return {
           title: project.gsx$title.$t,
           image: project.gsx$image.$t,
@@ -89,12 +82,9 @@ fetch(source)
       })
       app(projects)
   })
-  .catch( err => console.log('err', err))
-
+//calls the function to create a gallery and push it to the portfolio section
 function app(projects) {
   console.log('app - projects', projects)
-
-
 //   creates the gallery
   function gallery(){
     for(let i =0; i < projects.length; i++){
@@ -111,14 +101,18 @@ function app(projects) {
 }
 
 // navigation collapse/expand
+//define variables
+$collapse = $("#collapse");
+$mainDiv = $("#main");
+//functions to open/close nav
 function openNav() {
-    document.getElementById("collapse").style.width = "160px";
-    document.getElementById("main").style.marginLeft = "160px";
+    $collapse.css("width","160px");
+    $mainDiv.css("margin-left","160px");
     $openButton.addClass('hide');
   }
   
   function closeNav() {
-    document.getElementById("collapse").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    $collapse.css("width","0px");
+    $mainDiv.css("margin-left","0px");
     $openButton.addClass('show').removeClass('hide');
   }
