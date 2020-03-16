@@ -72,15 +72,18 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| word styling css | M | 1hr | 0 | incomplete |
-| logo | M | 1hr | 0 | incomplete |
-| Background images | L | 3hrs | 1hr | incomplete |
+| redo nav | H | 2hrs | 2hrs | 2hrs | 
+| word styling css | M | 1hr | 1hr | 1hr |
+| animation | L | 1hr | 2hr | 2hr |
+| logo | M | 1hr | 1hr | incomplete-removed |
+| Background images | L | 3hrs | 1hr | removed |
 | Nav Buttons | H | 2hrs | 2 hrs| 2hrs |
-| Adding Portfolio Images | M | 3hr | 1hr | hr |
+| Adding Portfolio Images | M | 3hr | 1hr | 1hr |
 | Adding Form | L | 2hrs| 30min | 30min |
 | Working with API | H | 3hrs| 1hr | 1hr |
+| JS animation | M | 30min | 1hr| 1hr |
 | HTML frame setup | H | 2hrs | 2hrs | 2hrs |
-| Total | H | 21hrs| 5hrs | 5hrs |
+| Total | H | 20.5hrs| 13.5hrs | 13.5hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 

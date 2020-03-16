@@ -85,7 +85,7 @@ fetch(source)
 //calls the function to create a gallery and push it to the portfolio section
 function app(projects) {
   console.log('app - projects', projects)
-//   creates the gallery
+//creates the gallery
   function gallery(){
     for(let i =0; i < projects.length; i++){
         let $card = $(`
